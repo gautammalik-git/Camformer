@@ -4,7 +4,7 @@ Predicting gene expression using millions of yeast promoters reveals *cis*-regul
 **Problem**: Let $S = \{A,C,G,T,N\}^{110}$ denote a promoter sequence of length $110$. Here, $A$, $C$, $G$, $T$ are the four nucleotides and  $N$ represents an unknown nucleotide.  The gene expression prediction task is then to learn a mapping  $f: S \to \mathbb{R}$.
 
 <div align="center">
-    <img src="figs/Fig1.jpg" alt="Graphical abstract" width="500">
+    <img src="readme_figs/Fig1.jpg" alt="Graphical abstract" width="500">
 </div>
 
 **Data**: We use data from [DREAM Challenge](https://www.synapse.org/#!Synapse:syn28469146/wiki/617075) consisting of 7 million random promoter sequences and the yellow fluorescent protein level.
@@ -12,10 +12,20 @@ Predicting gene expression using millions of yeast promoters reveals *cis*-regul
 **Model**: A residual convolutional neural network.
 
 <div align="center">
-    <img src="figs/Fig2.jpg" alt="Graphical abstract" width="500">
+    <img src="readme_figs/Fig2.jpg" alt="Search for a model" width="500">
 </div>
 
-**Assessment**: Predictive and Explanatory
+**Assessment**: Predictive
+
+<div align="center">
+    <img src="readme_figs/Fig3.jpg" alt="Evaluating a trained model" width="500">
+</div>
+
+**Assessment**: Explanatory, Scientific discovery
+
+<div align="center">
+    <img src="readme_figs/Fig4.jpg" alt="Evaluating a trained model for explanatory assessment" width="500">
+</div>
 
 #### File information
 
