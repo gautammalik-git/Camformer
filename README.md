@@ -7,13 +7,15 @@ Predicting gene expression using millions of yeast promoters reveals *cis*-regul
     <img src="readme_figs/Fig1.jpg" alt="Graphical abstract" width="500">
 </div>
 
-**Data**: We use data from [DREAM Challenge](https://www.synapse.org/#!Synapse:syn28469146/wiki/617075) consisting of 7 million random promoter sequences and the yellow fluorescent protein level.
+**Data**: We use data from [DREAM Challenge](https://zenodo.org/records/7395397) consisting of 7 million random promoter sequences and the yellow fluorescent protein level. We then use the official test set from the challenge to evaluate our trained model(s).
 
-**Model**: A residual convolutional neural network.
+**Model**: A residual convolutional neural network, strategically optimised using automated hyperparameter tuning.
 
 <div align="center">
     <img src="readme_figs/Fig2.jpg" alt="Search for a model" width="500">
 </div>
+
+The figure above shows the structure of the original (large variant) model (16M parameters). There is an almost equally good model that has 90\% less parameters (1.4M). Please see the associated manuscript (preprint) for more details. 
 
 **Assessment**: Predictive
 
