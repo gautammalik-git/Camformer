@@ -46,6 +46,7 @@ To be updated.
 
 Relevant resources and previous Camformer repositories.
 
+0. Camformer repository (full): [Complete repo](https://github.com/tirtharajdash/Camformer)
 1. Camformer repository (2022 version): [DREAM2022 Submission](https://github.com/FredrikSvenssonUK/DREAM2022_Camformers)
 2. Camformer repository (Pre-submission): [Camformer (old)](https://github.com/FredrikSvenssonUK/camformers)
 3. DREAM 2022 Challenge [Wiki Page](https://www.synapse.org/#!Synapse:syn28469146/wiki/617075)
