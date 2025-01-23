@@ -40,19 +40,31 @@ for (g in groups) {
         mylist[[m]] = dat.pvt[dat.pvt$Model == m,paste(g,"_",c,sep="")]**2
       }
     }
+    
+    # Find global limits for plot and set formatting options
     lims = c(min(baseline[baseline$X==c,g],unlist(mylist)),
              max(baseline[baseline$X==c,g],unlist(mylist)))
     par(font.main=1, cex.main=1)
+    
+    # Make boxplot
     bp = boxplot(mylist,outline = FALSE, horizontal = FALSE,frame=FALSE,col=paste(c("#e41a1c","#984ea3","#666666","#666666","#666666"),"66",sep=""),border="#666666", xlab=paste(gsub("^pea","Pea",gsub("spe","Spe",c))," correlation",sep=""),main=g, font.main=1,ylim=lims)
+    
+    # Add points for replicates
     for (i in 1:length(mylist)) {
       scatter = runif(length(mylist[[i]]))*.3-.15
       points(rep(i,length(mylist[[i]]))+scatter,mylist[[i]],pch=20,cex=1,col="#000000CC",xpd=NA)
     }
+    
+    # Plot performance of baseline models
     bl = baseline[baseline$X==c,which(g == groups)+2]
     segments(.5,bl,5.5,bl,lty=2,col=bl_colors)
     text(5.5,bl,bl_models,xpd=NA,pos=4,col=bl_colors)
+    
+    # Retrieve baseline performance (Vaishnav, de Boer et al.)
     vaishnav = bl[length(bl)]
-    all_FCs = c()
+    
+    # Calculate and display statistics compared to baseline
+    all_FCs = c() # Relative improvement
     for (i in 1:length(mylist)) {
       p = t.test(x = mylist[[i]], mu = vaishnav)$p.value
       fc = mean(mylist[[i]]/vaishnav)
@@ -66,6 +78,7 @@ for (g in groups) {
       
       text(i,lims[2],paste("p=",signif(p,1),"\n",signif(fc,4),"x","\n",signif(neg_fc,4),"x\n",round(mean(mylist[[i]]),4),"+/-",round(sd(mylist[[i]]),4),sep=""),xpd=NA,cex=.5,pos=3)
     }
+    # Print relative improvements
     text(1:length(mylist),bp$stats[1,],paste(ifelse(all_FCs<0,"","+"),signif(all_FCs,2),"%",sep=""),xpd=NA,pos=1,col=c("#e41a1c","#984ea3","#666666","#666666","#666666"))
   }
 }
