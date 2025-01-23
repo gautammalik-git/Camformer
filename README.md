@@ -1,7 +1,7 @@
 ### Camformer
 Predicting gene expression using millions of yeast promoters reveals *cis*-regulatory logic
 
-![Graphical abstract](figs/Fig1.png)
+![Graphical abstract](figs/Fig1.jpg)
 
 #### File information
 
