@@ -4,7 +4,7 @@ Predicting gene expression using millions of yeast promoters reveals *cis*-regul
 **Problem**: Let $S = \{A,C,G,T,N\}^{110}$ denote a promoter sequence of length $110$. Here, $A$, $C$, $G$, $T$ are the four nucleotides and  $N$ represents an unknown nucleotide.  The gene expression prediction task is then to learn a mapping  $f: S \to \mathbb{R}$.
 
 <div align="center">
-    <img src="figs/Fig1.jpg" alt="Graphical abstract" width="200">
+    <img src="figs/Fig1.jpg" alt="Graphical abstract" width="500">
 </div>
 
 **Data**: We use data from [DREAM Challenge](https://www.synapse.org/#!Synapse:syn28469146/wiki/617075) consisting of 7 million random promoter sequences and the yellow fluorescent protein level.
@@ -12,7 +12,7 @@ Predicting gene expression using millions of yeast promoters reveals *cis*-regul
 **Model**: A residual convolutional neural network.
 
 <div align="center">
-    <img src="figs/Fig2.jpg" alt="Graphical abstract" width="200">
+    <img src="figs/Fig2.jpg" alt="Graphical abstract" width="500">
 </div>
 
 **Assessment**: Predictive and Explanatory
@@ -21,9 +21,11 @@ Predicting gene expression using millions of yeast promoters reveals *cis*-regul
 
 Here are some details on what the purpose of each file is:
 
-| File               | Purpose                                                                |
-|:-------------------| :----------------------------------------------------------------------|
-| `gen_figs.ipynb`   | A notebook to show (re-generate) some figures in the manuscript.       |
+| File               | Purpose                                                                       |
+|:-------------------| :-----------------------------------------------------------------------------|
+| `gen_figs.ipynb`   | A notebook to show (re-generate) some figures in the manuscript.              |
+| `train_rep.py`     | Program to train several replicates of a Camformer model using training data. |
+| `score_rep.py`     | Program to test several replicates of a trained Camformer model on test data. |
 
 
 #### Directory structure
