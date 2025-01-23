@@ -1,7 +1,21 @@
 ### Camformer
 Predicting gene expression using millions of yeast promoters reveals *cis*-regulatory logic
 
-![Graphical abstract](figs/Fig1.jpg)
+**Problem**: Let $S = \{A,C,G,T,N\}^{110}$ denote a promoter sequence of length $110$. Here, $A$, $C$, $G$, $T$ are the four nucleotides and  $N$ represents an unknown nucleotide.  The gene expression prediction task is then to learn a mapping  $f: S \to \mathbb{R}$.
+
+<div align="center">
+    <img src="figs/Fig1.jpg" alt="Graphical abstract" width="200">
+</div>
+
+**Data**: We use data from [DREAM Challenge](https://www.synapse.org/#!Synapse:syn28469146/wiki/617075) consisting of 7 million random promoter sequences and the yellow fluorescent protein level.
+
+**Model**: A residual convolutional neural network.
+
+<div align="center">
+    <img src="figs/Fig2.jpg" alt="Graphical abstract" width="200">
+</div>
+
+**Assessment**: Predictive and Explanatory
 
 #### File information
 
