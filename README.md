@@ -4,7 +4,7 @@ Predicting gene expression using millions of yeast promoters reveals *cis*-regul
 **Problem**: Let $S = \{A,C,G,T,N\}^{110}$ denote a promoter sequence of length $110$. Here, $A$, $C$, $G$, $T$ are the four nucleotides and  $N$ represents an unknown nucleotide.  The gene expression prediction task is then to learn a mapping  $f: S \to \mathbb{R}$.
 
 <div align="center">
-    <img src="readme_figs/Fig1.jpg" alt="Graphical abstract" width="500">
+    <img src="readme_figs/Fig1.jpg" alt="Graphical abstract" width="400">
 </div>
 
 **Data**: We use data from [DREAM Challenge](https://zenodo.org/records/7395397) consisting of 7 million random promoter sequences and the yellow fluorescent protein level. We then use the official test set from the challenge to evaluate our trained model(s).
@@ -12,7 +12,7 @@ Predicting gene expression using millions of yeast promoters reveals *cis*-regul
 **Model**: A residual convolutional neural network, strategically optimised using automated hyperparameter tuning.
 
 <div align="center">
-    <img src="readme_figs/Fig2.jpg" alt="Search for a model" width="500">
+    <img src="readme_figs/Fig2.jpg" alt="Search for a model" width="400">
 </div>
 
 The figure above shows the structure of the original (large variant) model (16M parameters). There is an almost equally good model that has 90\% less parameters (1.4M). Please see the associated manuscript (preprint) for more details. 
@@ -20,13 +20,13 @@ The figure above shows the structure of the original (large variant) model (16M 
 **Assessment**: Predictive
 
 <div align="center">
-    <img src="readme_figs/Fig3.jpg" alt="Evaluating a trained model" width="500">
+    <img src="readme_figs/Fig3.jpg" alt="Evaluating a trained model" width="400">
 </div>
 
 **Assessment**: Explanatory, Scientific discovery
 
 <div align="center">
-    <img src="readme_figs/Fig4.jpg" alt="Evaluating a trained model for explanatory assessment" width="500">
+    <img src="readme_figs/Fig4.jpg" alt="Evaluating a trained model for explanatory assessment" width="400">
 </div>
 
 #### File information
