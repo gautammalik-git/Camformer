@@ -17,7 +17,7 @@ Predicting gene expression using millions of yeast promoters reveals *cis*-regul
 
 The figure above shows the structure of the original (large variant) model (16M parameters). There is an almost equally good model that has 90\% less parameters (1.4M). Please see the associated manuscript (preprint) for more details. 
 
-**Assessment**: Predictive
+**Assessment**: Predictive, comparative
 
 <div align="center">
     <img src="readme_figs/Fig3.jpg" alt="Evaluating a trained model" width="400">
@@ -28,6 +28,7 @@ The figure above shows the structure of the original (large variant) model (16M 
 <div align="center">
     <img src="readme_figs/Fig4.jpg" alt="Evaluating a trained model for explanatory assessment" width="400">
 </div>
+
 
 #### File information
 
@@ -42,16 +43,20 @@ Here are some details on what the purpose of each file is:
 
 #### Directory structure
 
-To be updated.
+| Directory           | Contents                                                                |
+|:--------------------| :-----------------------------------------------------------------------|
+|`base`               | Contains core codebase, utility functions, auxiliary helper files etc.  |
+|`manuscript_figures` | Contains data, script and figures present in the manuscript.            |
+|`readme_figs`        | Images used to prepare this nice-looking README file.                   |
+|`analysis`           | Contains some basic analysis of results. Contents may be updated.       |
+
 
 #### References
 
 Relevant resources and previous Camformer repositories.
 
-0. Camformer repository (full): [Complete repo](https://github.com/tirtharajdash/Camformer)
 1. Camformer repository (2022 version): [DREAM2022 Submission](https://github.com/FredrikSvenssonUK/DREAM2022_Camformers)
-2. Camformer repository (Pre-submission): [Camformer (old)](https://github.com/FredrikSvenssonUK/camformers)
-3. DREAM 2022 Challenge [Wiki Page](https://www.synapse.org/#!Synapse:syn28469146/wiki/617075)
-4. Rafi et al., 2023: [Paper](https://www.biorxiv.org/content/10.1101/2023.04.26.538471v1)
-5. Rafi et al., 2023: [Official Evaluation](https://zenodo.org/records/7395397)
+2. DREAM 2022 Challenge [Wiki Page](https://www.synapse.org/#!Synapse:syn28469146/wiki/617075)
+3. Rafi et al., 2023: [Paper](https://www.biorxiv.org/content/10.1101/2023.04.26.538471v1)
+4. Rafi et al., 2023: [Official Evaluation](https://zenodo.org/records/7395397)
 
