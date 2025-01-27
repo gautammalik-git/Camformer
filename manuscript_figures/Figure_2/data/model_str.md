@@ -59,7 +59,6 @@ Non-trainable params: 0
 Input size (MB): 0.00
 Forward/backward pass size (MB): 12.86
 Params size (MB): 63.37
-```
 
 Estimated Total Size (MB): 76.22
 ----------------------------------------------------------------
