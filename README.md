@@ -45,10 +45,11 @@ Here are some details on what the purpose of each file is:
 
 | Directory           | Contents                                                                |
 |:--------------------| :-----------------------------------------------------------------------|
+|`analysis`           | Contains some basic analysis of results. Contents may be updated.       |
 |`base`               | Contains core codebase, utility functions, auxiliary helper files etc.  |
 |`manuscript_figures` | Contains data, script and figures present in the manuscript.            |
 |`readme_figs`        | Images used to prepare this nice-looking README file.                   |
-|`analysis`           | Contains some basic analysis of results. Contents may be updated.       |
+|`saved_models`       | Saved model weights and example code to run.                            |
 
 
 #### References
@@ -57,6 +58,6 @@ Relevant resources and previous Camformer repositories.
 
 1. Camformer repository (2022 version): [DREAM2022 Submission](https://github.com/FredrikSvenssonUK/DREAM2022_Camformers)
 2. DREAM 2022 Challenge [Wiki Page](https://www.synapse.org/#!Synapse:syn28469146/wiki/617075)
-3. Rafi et al., 2023: [Paper](https://www.biorxiv.org/content/10.1101/2023.04.26.538471v1)
-4. Rafi et al., 2023: [Official Evaluation](https://zenodo.org/records/7395397)
+3. Rafi et al., 2024: [Paper](https://doi.org/10.1038/s41587-024-02414-w) [Preprint](https://www.biorxiv.org/content/10.1101/2023.04.26.538471)
+4. Rafi et al., 2024: [Data and Official Evaluation](https://zenodo.org/records/10633252) [GitHub](https://github.com/de-Boer-Lab/random-promoter-dream-challenge-2022)
 
