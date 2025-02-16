@@ -2,8 +2,8 @@ This directory contains Camformer models: Original (Model ID: 9) and Mini (Model
 
 Step 0: Download saved models
 ``` 
-wget http://www.marsvinsspelet.com/joltweb/sbteam/code/camformer/Camformer_9.tar.gz
-wget http://www.marsvinsspelet.com/joltweb/sbteam/code/camformer/Camformer_219.tar.gz
+wget http://www.sblab.uk/code/camformer/Camformer_9.tar.gz
+wget http://www.sblab.uk/code/camformer/Camformer_219.tar.gz
 ```
 
 Step 1: Unzip the files: `tar -xvzf Camformer_ID.tar.gz`
