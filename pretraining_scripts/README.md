@@ -1,4 +1,4 @@
-# Camformer Unified Command-Line Interface
+# Camformer Unified Command-Line Interface for Pre-training
 
 This unified interface makes it easy to train and test both basic and large Camformer models using simple commands.
 
