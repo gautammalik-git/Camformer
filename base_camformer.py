@@ -12,7 +12,7 @@ Configuration:
 - Data: 90% train, 5% val, 5% test split
 
 Usage:
-    python train_and_test_camformer.py --train_data train_data.txt --test_data test_data.txt --output_dir results/
+    python base_camformer.py --train_data train_data.txt --test_data test_data.txt --output_dir results/
 
 """
 
