@@ -31,6 +31,28 @@ python camformer.py model_basic --train_data data.txt -v
 - **Parameters**: ~16.6M parameters
 - **Script**: `large_camformer.py`
 
+### DNA Encoding Variants
+
+| Encoding        | Function Call Example        | Channels | A           | C           | G           | T           | N                   | 5th Channel Meaning         |
+|-----------------|------------------------------|----------|-------------|-------------|-------------|-------------|---------------------|-----------------------------|
+| **onehot**      | `onlyN=False`               | 4        | [1,0,0,0]   | [0,1,0,0]   | [0,0,1,0]   | [0,0,0,1]   | [0,0,0,0]           | —                           |
+| **onehotWithN** | *(default)* `onlyN=True`   | 4        | [1,0,0,0]   | [0,1,0,0]   | [0,0,1,0]   | [0,0,0,1]   | [0.25,0.25,0.25,0.25]| —                           |
+| **onehotWithP** | `onlyN=False, onlyP=True`  | 5        | [1,0,0,0,1] | [0,1,0,0,0] | [0,0,1,0,1] | [0,0,0,1,0] | [0.25,0.25,0.25,0.25,0.5] | Purine/Pyrimidine info |
+
+---
+
+### Why Use These Variants?
+
+- **onehot**:  
+  Standard, simple, but treats 'N' as all zeros (no info).
+
+- **onehotWithN**:  
+  Softly encodes 'N' as equally likely to be any base, which can help the model not treat 'N' as a "dead" or "missing" base.
+
+- **onehotWithP**:  
+  Adds biochemical information (purine/pyrimidine) as an extra channel, which can help the model learn patterns related to these properties.
+
+
 ## Usage Examples
 
 ### Basic Usage
