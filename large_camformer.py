@@ -9,7 +9,7 @@ Performance Metrics:
 - Primary: Pearson correlation (r) and Pearson R² (variance explained)
 
 Usage:
-    python train_and_test_camformer_original.py --train_data train_data.txt --test_data test_data.txt --output_dir results/
+    python large_camformer.py --train_data train_data.txt --test_data test_data.txt --output_dir results/
 
 """
 
